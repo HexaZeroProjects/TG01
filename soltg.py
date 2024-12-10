@@ -1,13 +1,10 @@
-from config import TOKEN
+from config import TOKEN, WEATHER_API_KEY
 import asyncio
 from aiogram import Bot, Dispatcher, types
 from aiogram.filters import CommandStart, Command
 from aiogram.types import Message
 from aiogram.fsm.storage.memory import MemoryStorage
 import requests
-
-WEATHER_API_KEY = '528030aee6c1dde045f8383c4cfd14a9'
-WEATHER_URL = 'http://api.openweathermap.org/data/2.5/weather'
 
 
 # Настройка хранилища
